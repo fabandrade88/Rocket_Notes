@@ -18,7 +18,8 @@ export function New() {
                 <Form>
                 <header>
                     <h1> Criar nota</h1>
-                    <Link to="/">Voltar</Link>            </header>
+                    <Link to="/">Voltar</Link>            
+                </header>
 
                 <Input placeholder ="Titulo"/>
                 <Textarea placeholder="Observacoes"/>
