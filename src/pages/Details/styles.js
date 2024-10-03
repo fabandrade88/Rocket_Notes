@@ -11,6 +11,14 @@ grid-template-rows: 105px auto;
 grid-template-areas:
 "header"
 "content";
+
+>main {
+    grid-area: content;
+    overflow: scroll;
+    padding: 64px 0;
+    font-family: 'Roboto Slab', serif;
+}
+
 `;
 
 export const Links = styled.ul`
@@ -23,4 +31,31 @@ list-style: none;
     }
 }
 
+`;
+
+export const Content = styled.div`
+
+max-width: 550px;
+margin: 0 auto;
+
+display: flex;
+flex-direction: column;
+
+> button:first-child {
+    align-self: end;
+}
+
+> h1{
+    font-size: 36px;
+    font-weight: 500;
+    padding-top: 64px;
+    font-family: 'Roboto Slab', serif;
+}
+
+> p {
+    font-size: 16px;
+    margin-top: 16px;
+    text-align: justify;
+    font-family: 'Roboto Slab', serif;
+}
 `;
